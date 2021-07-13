@@ -22,6 +22,7 @@ BodyResize.Name = "Body Resize"
 BodyResize.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 BodyResize.Active = true
 BodyResize.Draggable = true
+BodyResize.Parent = game.CoreGui
 
 Outline.Name = "Outline"
 Outline.Parent = BodyResize
@@ -29,6 +30,8 @@ Outline.BackgroundColor3 = Color3.fromRGB(35, 36, 35)
 Outline.BorderSizePixel = 0
 Outline.Position = UDim2.new(0.611181736, 0, 0.163187861, 0)
 Outline.Size = UDim2.new(0, 280, 0, 140)
+Outline.Active = true
+Outline.Draggable = true
 
 Frame.Parent = Outline
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
