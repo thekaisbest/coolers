@@ -20,8 +20,6 @@ local cross = Instance.new("ImageButton")
 
 BodyResize.Name = "Body Resize"
 BodyResize.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-BodyResize.Active = true
-BodyResize.Draggable = true
 BodyResize.Parent = game.CoreGui
 
 Outline.Name = "Outline"
