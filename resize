@@ -1,0 +1,139 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BodyResize = Instance.new("ScreenGui")
+local Outline = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local BRB = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local BRS = Instance.new("TextButton")
+local Frame_3 = Instance.new("Frame")
+local Info = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local CloseButton = Instance.new("TextButton")
+local cross = Instance.new("ImageButton")
+
+--Properties:
+
+BodyResize.Name = "Body Resize"
+BodyResize.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BodyResize.Active = true
+BodyResize.Draggable = true
+
+Outline.Name = "Outline"
+Outline.Parent = BodyResize
+Outline.BackgroundColor3 = Color3.fromRGB(35, 36, 35)
+Outline.BorderSizePixel = 0
+Outline.Position = UDim2.new(0.611181736, 0, 0.163187861, 0)
+Outline.Size = UDim2.new(0, 280, 0, 140)
+
+Frame.Parent = Outline
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0252055507, 0, 0.0528784692, 0)
+Frame.Size = UDim2.new(0, 265, 0, 125)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(80, 80, 80))}
+UIGradient.Rotation = 90
+UIGradient.Parent = Frame
+
+BRB.Name = "BRB"
+BRB.Parent = Frame
+BRB.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+BRB.BorderSizePixel = 0
+BRB.Position = UDim2.new(0.0481932461, 0, 0.571354449, 0)
+BRB.Size = UDim2.new(0, 100, 0, 40)
+BRB.Font = Enum.Font.GothamSemibold
+BRB.Text = "Body Resize Increase"
+BRB.TextColor3 = Color3.fromRGB(0, 0, 0)
+BRB.TextScaled = true
+BRB.TextSize = 14.000
+BRB.TextWrapped = true
+BRB.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/thekaisbest/coolers/main/FE_Big_People.lua"))()
+end)
+
+Frame_2.Parent = BRB
+Frame_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(-0.000454406749, 0, 0.99351275, 0)
+Frame_2.Size = UDim2.new(0, 100, 0, 4)
+
+BRS.Name = "BRS"
+BRS.Parent = Frame
+BRS.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+BRS.BorderSizePixel = 0
+BRS.Position = UDim2.new(0.0444197059, 0, 0.115354419, 0)
+BRS.Size = UDim2.new(0, 100, 0, 40)
+BRS.Font = Enum.Font.GothamSemibold
+BRS.Text = "Body Resize Shrink"
+BRS.TextColor3 = Color3.fromRGB(0, 0, 0)
+BRS.TextScaled = true
+BRS.TextSize = 14.000
+BRS.TextWrapped = true
+BRS.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/thekaisbest/coolers/main/FE_Small_People.lua"))()
+end)
+
+Frame_3.Parent = BRS
+Frame_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(-0.000454406749, 0, 0.99351275, 0)
+Frame_3.Size = UDim2.new(0, 100, 0, 4)
+
+Info.Name = "Info"
+Info.Parent = Frame
+Info.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Info.BorderSizePixel = 0
+Info.Position = UDim2.new(0.556499422, 0, 0.155888915, 0)
+Info.Size = UDim2.new(0, 105, 0, 85)
+Info.Font = Enum.Font.GothamSemibold
+Info.Text = "NOTE: U must be R15 to use these scripts."
+Info.TextColor3 = Color3.fromRGB(0, 0, 0)
+Info.TextScaled = true
+Info.TextSize = 14.000
+Info.TextWrapped = true
+
+Frame_4.Parent = Info
+Frame_4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(-0.000454566587, 0, 0.99351269, 0)
+Frame_4.Size = UDim2.new(0, 105, 0, 4)
+
+CloseButton.Name = "Close Button"
+CloseButton.Parent = Frame
+CloseButton.BackgroundColor3 = Color3.fromRGB(35, 36, 35)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.951298058, 0, -0.134857148, 0)
+CloseButton.Size = UDim2.new(0, 25, 0, 25)
+CloseButton.Font = Enum.Font.GothamBold
+CloseButton.Text = ""
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextSize = 14.000
+CloseButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+cross.Name = "cross"
+cross.Parent = CloseButton
+cross.BackgroundTransparency = 1.000
+cross.LayoutOrder = 3
+cross.Position = UDim2.new(-0.0199999809, 0, -0.0276191235, 0)
+cross.Size = UDim2.new(0, 25, 0, 25)
+cross.ZIndex = 2
+cross.Image = "rbxassetid://6764432408"
+cross.ImageRectOffset = Vector2.new(200, 600)
+cross.ImageRectSize = Vector2.new(50, 50)
+
+-- Scripts:
+
+local function KLIVOIR_fake_script() -- CloseButton.LocalScript 
+	local script = Instance.new('LocalScript', CloseButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end
+coroutine.wrap(KLIVOIR_fake_script)()
